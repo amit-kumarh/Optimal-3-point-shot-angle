@@ -1,4 +1,4 @@
-function res = make_hoop(speed0, angle)
+function res = determine_make(speed0, angle)
     [T, U] = bball_trajectory(speed0, angle);
     finalx = U(end, 1);
     distance_to_hoop_center = 7.239;

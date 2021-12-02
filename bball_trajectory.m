@@ -30,7 +30,7 @@ function [T, U] = bball_trajectory(speed0, angle)
     
     % Run solver
     init_conditions = [x0; y0; u0; v0];
-    [T, U] = ode45(@rate_func, [0, 60], init_conditions, options);
+    [T, U] = ode45(@rate_func, [0, 6], init_conditions, options);
     
     %% Helper functions
         
