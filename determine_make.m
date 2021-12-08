@@ -1,3 +1,4 @@
+% Determines if the ball is within the rim
 function res = determine_make(speed0, angle)
     [T, U] = bball_trajectory(speed0, angle);
     finalx = U(end, 1);
