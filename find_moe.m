@@ -1,9 +1,9 @@
 %% Finds margin of error for given angle
 
 function moe = find_moe(angle)
-    speeds = linspace(7, 13, 500);
+    speeds = linspace(9.5, 11.5, 600);
     makes = [];
-    for i = 1:500
+    for i = 1:600
         if determine_make(speeds(i), angle)
             makes(end+1) = speeds(i);
         end
